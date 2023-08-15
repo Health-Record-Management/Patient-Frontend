@@ -21,11 +21,11 @@ export const generalRequests = (config: RequestConfig) => {
                     response.statusCode = res.status;
                     response.result = res.data;
                 })
-                // Uncomment later when backend adds the error
-                // .catch((err) => {
-                //     response.statusCode = err.response.statusCode;
-                //     response.code = err.code;
-                // });
+            // Uncomment later when backend adds the error
+            // .catch((err) => {
+            //     response.statusCode = err.response.statusCode;
+            //     response.code = err.code;
+            // });
             return response;
         },
         // Backend 'isDoctor' Request: returns true if the user is a doctor, and false otherwise

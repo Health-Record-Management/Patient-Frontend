@@ -53,9 +53,33 @@ export const patientRequests = (config: RequestConfig) => {
                 records: records.data,
                 error: ""
             }
-
+            
             return response;
         },
+        // getRecords: async (username:string, page:string) => {
+        //     const params = new URLSearchParams({
+        //         username,
+        //         page
+        //     });
+
+        //     let response: {
+        //         code: string;
+        //         statusCode: number;
+        //         result: RecordTableInfo | null;
+        //     } = {
+        //         code: "",
+        //         statusCode: 0,
+        //         result: null
+        //     }
+
+        //     await axios
+        //         .get(config.baseUrl + "patient/records", { params: params })
+        //         .then((res) => {
+        //             response.statusCode = res.status;
+        //             response.result = res.data;
+        //     })
+        //     return response;
+        // }
     };
 };
 
